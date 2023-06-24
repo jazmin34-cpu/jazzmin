@@ -1,0 +1,375 @@
+/*MENU DE NAVEGACION*/
+.btn-inicio.hidden {
+  display: none;
+}
+.res{
+  text-shadow: 2px 2px 4px rgb(250, 147, 255);
+}
+
+nav {
+  font-size: 30px;
+  font-family: fantasy;
+  background-color: #c483dd5d(93, 179, 182, 0.5); /* Color de fondo con opacidad de 0.5 */
+  background-color: #ab4cd15b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  position: fixed; /* Menú fijo en la parte superior de la pantalla */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999; /* Asegurar que el menú esté por encima de otros elementos */
+}
+
+h1 {
+  margin: 0;
+}
+
+a {
+  color: #fff; /* Color blanco para el texto del menú */
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+}
+
+li {
+  margin-left: 10px;
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: #deb9ec;
+}
+
+.dropdown-content a {
+  color: #c483dd;
+  display: block;
+  padding: 10px;
+}
+
+li.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Efecto de hover */
+nav a:hover {
+  color: #cc59fa; /* Cambiar el color del texto al hacer hover */
+  font-weight: bold; /* Cambiar el peso de la fuente al hacer hover */
+}
+
+nav li.dropdown:hover .dropdown-content a {
+  color: #cc59fa; /* Cambiar el color del enlace dentro del dropdown al hacer hover */
+}
+
+main {
+  margin-top: 50px; /* Margen superior igual a la altura del menú */
+}
+
+nav.scrolled {
+  background-color: #c483dd; /* Color sólido para el menú cuando se desplaza */
+}
+/*MENU DE NAVEGACION*/
+  
+  
+  *{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .info{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  header{
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(to right, #355b7d8e, #6c5b7ba9, #c06c84a6), url(imagenes/portada2.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  
+  }
+  
+  .wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  .texto-header{
+  display: flex;
+  height: 430px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  }
+  
+  .texto-header h1{
+    font-size: 70px;
+    color: azure;
+  }
+  
+  info{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .imagen{
+    width: 48%;
+  }
+  
+  .contenido-texto h3{
+    margin-bottom: 15px;
+  }
+  
+  .contenido-texto h3 span{
+  
+    background: #ab4cd1fb;
+    color: aliceblue;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+  margin-right: 5px;
+  }
+  
+  /*Separador*/
+  
+  .contenido-texto{
+    padding: 0px 0px 30px 15 px;
+    font-weight: 300;
+    text-align: justify;
+  }
+  
+  .image-separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  hr {
+    flex: 1;
+    height: 1px;
+    border: none;
+    background-color: #000;
+  }
+
+  
+  main{ background-color: rgba(213, 189, 240, 0.541);}
+  
+  .tituloheader {
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+  }
+  
+  .menuCSS3 ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .menuCSS3 a {
+    display:inline-flex;
+    padding: 2em;
+    text-decoration: #e9dfdf;
+    color: #191C26;
+  }
+  .menuCSS3 a:hover {
+    background-color: #8c4aca;
+    text-decoration: underline;
+  }
+  .menuCSS3 ul li ul {
+    display: none;
+  }
+  .menuCSS3 ul li a:hover + ul, .menuCSS3 ul li ul:hover {
+    display: block;
+  }
+  table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    background-color: #ffffff;
+  
+  }
+  
+  th, td {
+    padding: 5px;
+    text-align: center;
+  
+  }
+  
+  /* Estilos para las imágenes */
+
+   
+
+  
+/*footpage*/
+footer {
+  background-color: #dfd8dd;
+  background-position: center;
+  background-size: cover;
+  display: block;
+  padding: 30px;
+  font-family: fantasy;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+
+.footer-column {
+  flex-basis: 30%;
+  padding: 10px;
+  flex-direction: column;
+}
+.footer-column h3 {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #8c4aca;
+  
+}
+
+.footer-column p {
+  margin: 0;
+  font-size: 40px;
+ 
+}
+
+.footer-column ul {
+  margin: 10px 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column li {
+  margin-bottom: 5px;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: #080808;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+/*footpage*/
+  
+  /* formulario */
+  
+  .formulario {
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 50px auto; /* Espacio vertical y centrado horizontal */
+    box-shadow: 0 50px 80px rgb(19, 61, 138);
+    box-sizing: border-box;
+    color: violet;
+    border: 10px solid #000;
+   
+  }
+  
+  h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  p {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 25px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+  }
+  
+  form textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  form input[type="submit"] {
+    background-color: #355b7d;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #3e6d96;
+  }
+  
+  /* formulario */
+  
+      /* CARRUSEL */
+      .carousel {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+      }
+      
+      .slide.active {
+        opacity: 1;
+      }
+
+
+
+/* CARRUSEL */
